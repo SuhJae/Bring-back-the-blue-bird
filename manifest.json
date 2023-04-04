@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "파란새를 돌려내!",
+  "version": "1.0",
+  "description": "쉬바견을 몰아내고 파란새를 돌려내는 확장 프로그램입니다.",
+  "action": {
+    "default_icon": {
+      "48": "icon.png"
+    }
+  },
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["https://twitter.com/*"],
+      "js": ["contentScript.js"]
+    }
+  ],
+  "icons": {
+    "48": "Twitter_Logo.png"
+  }
+}
